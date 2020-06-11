@@ -16,4 +16,9 @@ public partial class listStd : System.Web.UI.Page
     {
         GridView1.DataBind();
     }
+
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        //SqlDataSource2.FilterExpression = " [CourseNo] like '" + DropDownList1.Text +"%'";
+    }
 }

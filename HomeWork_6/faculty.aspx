@@ -13,7 +13,7 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"
                 SelectCommand="SELECT * FROM [Faculty]"
                 InsertCommand="INSERT INTO [Faculty] ([FacSSN], [FacFirstName], [FacLastName], [FacCity], [FacState], [FacDept], [FacRank], [FacSalary], [FacSupervisor], [FacHireDate], [FacZipCode]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
-                UpdateCommand="UPDATE [Faculty] SET [FacFirstName] = ?, [FacLastName] = ?, [FacCity] = ?, [FacState] = ?, [FacDept] = ?, [FacRank] = ?, [FacSalary] = ?, [FacSupervisor] = ?, [FacHireDate] = ?, [FacZipCode] = ? WHERE [FacSSN] = ?" DeleteCommand="DELETE FROM [Faculty] WHERE [FacSSN] = ?" OldValuesParameterFormatString="original_{0}" OnSelecting="SqlDataSource1_Selecting">
+                UpdateCommand="UPDATE [Faculty] SET [FacFirstName] = ?, [FacLastName] = ?, [FacCity] = ?, [FacState] = ?, [FacDept] = ?, [FacRank] = ?, [FacSalary] = ?, [FacSupervisor] = ?, [FacHireDate] = ?, [FacZipCode] = ? WHERE [FacSSN] = ?" DeleteCommand="select 1*1 from [Faculty]" OldValuesParameterFormatString="original_{0}" OnSelecting="SqlDataSource1_Selecting">
                 <FilterParameters></FilterParameters>
                 <DeleteParameters>
                     <asp:Parameter Name="original_FacSSN" Type="String" />
